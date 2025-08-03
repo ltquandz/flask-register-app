@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Quản trị</title></head>
+<body>
+    <h2>Danh sách đăng ký</h2>
+    <table border="1">
+        <tr><th>Họ tên</th><th>MSSV</th><th>Lớp</th></tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
